@@ -13,5 +13,8 @@ install: ## Install required libraries and setup
 test: ## Run all tests
 	@bundle exec rake spec
 
+lint: ## Runs Rubocop with the GOV.UK rules
+	@bundle exec rubocop
+
 format: ## Runs Rubocop with the GOV.UK rules
 	@bundle exec rake rubocop:autocorrect
